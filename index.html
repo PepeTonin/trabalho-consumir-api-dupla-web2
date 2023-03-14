@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="consulta_cep.js" type='module' defer></script>
+    <title>Dicionário</title>
 </head>
-
 <body>
-    <input id="entrada" type="text">
-    <button>send</button>
-    <p id="partOfSpeech"></p>
-    <p id="significados"></p>
-    <p id="sinonimos"></p>
-    <p id="silabas"></p>
-    <p id="frases"></p>
-</body>
+    <header>
+        <img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.dreamstime.com%2Fillustration%2Fdicion%25C3%25A1rio.html&psig=AOvVaw1HPNL9M-VQdsYYx3B_3izV&ust=1678834501450000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJj47aGA2v0CFQAAAAAdAAAAABAE" alt="">
+    </header>
+    <main class="container">
+        <h1 class="title">Dicionário</h1>
+        <div class="row">
+            <div class="input-box">
+                <input type="text" id="entrada">
+                <label for="palavra-pesquisada">Palavra pesquisada</label>
+            </div>
+        </div>
 
+        <div class="row">
+            <button id="pesquisar-palavra">Pesquisar</button>
+        </div>
+
+    </main>
+</body>
 </html>
