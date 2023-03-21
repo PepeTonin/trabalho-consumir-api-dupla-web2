@@ -6,24 +6,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --bg-color: rgb(172, 238, 146);
-    --primary-color: rgb(13, 67, 29);
-}
+
+/* :root {
+    --bg-color: #FEFAE0;
+    --primary-color: rgb(0, 0, 0);
+} */
 
 header {
     margin-top: 2rem;
 }
 header img{
-    width: 50rem;
+    width: 15rem;
+    text-align: left;
+    vertical-align: middle;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: left;
+    min-height: 90vh;
     background-color: var(--bg-color) ;
 }
 
@@ -37,9 +40,17 @@ body {
     gap: 40px;
 }
 
+.container input {
+    border-radius: 20px;
+    /* color: rgb(0, 0, 0); */
+    font-size: 18px;
+    font-weight: 100; 
+    border: 1px solid #BC6C25;
+}
+
 .title {
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     color: var(--primary-color);
 }
 
@@ -53,13 +64,32 @@ body {
 
 .container button {
     justify-self: center;
-    width: 200px;
-    height: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    /* width: 200px;
+    height: 50px; */
     /* background-color: var(--primary-color); */
     font-size: 20px;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #BC6C25;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+.container button:hover {
+    transition: 1s ease-in-out;
+    background: #BC6C25;
+}
+  
+  .container button:hover svg {
+    stroke-dashoffset: -480;
+}
+  
+  .container button span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
 }
