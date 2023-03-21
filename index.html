@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_api.css">
-    <script src="consulta_cep.js" type='module' defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type='module' defer></script>
     <title>Dicionário</title>
 </head>
-<body>
-    <header>
-        
-        <h1 class="title">  <img src ="https://cdn-icons-png.flaticon.com/512/917/917219.png" alt="">Dicionário</h1>
-    </header>
-    <main class="container">
-        <div class="row">
-            <label for="palavra-pesquisada">Palavra pesquisada</label>
-            <div class="input-box">
-                <input type="text" id="entrada">
-                
-            </div>
-        </div>
 
-        <div class="row">
+<body>
+
+    <header>
+        <h1 class="title"> <img src="https://cdn-icons-png.flaticon.com/512/917/917219.png" alt="">Dicionário</h1>
+    </header>
+
+    <main class="container">
+
+        <div class="row box-entrada">
+            <div class="input-box">
+                <label for="entrada">Palavra pesquisada</label>
+                <input type="text" id="entrada" placeholder="Digite uma palavra">
+            </div>
             <button class="pesquisarpalavra">Pesquisar</button>
         </div>
 
+        <div class="row box-saida">
+            <img id="imagensDog" src="" alt="" class="row">
+
+            <div id="significados" class="row">
+
+            </div>
+
+            <div class="row">
+                <p id="silabas"></p>
+            </div>
+
+            <div class="row">
+                <p id="sinonimos"></p>
+            </div>
+
+            <div class="row">
+                <p id="frases"></p>
+            </div>
+        </div>
+
     </main>
+
 </body>
+
 </html>
