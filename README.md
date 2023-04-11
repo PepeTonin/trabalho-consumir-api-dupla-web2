@@ -3,7 +3,7 @@
 * Pedro Tonin
 * Heloisa Machado
 ## Descrição
-Nosso trabalho é um dicionário web. O usuário digita uma palavra na caixa de texto que há na página e a aplicação retorna algumas informações a respeito dela. Para a realização, consumimos uma [api](https://github.com/ThiagoNelsi/dicio-api) que possui diversas informações a respeito de milhares de palavras da língua portuguesa.
+Nosso trabalho é um dicionário web. O usuário digita uma palavra na caixa de texto que há na página e a aplicação retorna algumas informações sobre ela. Para a realização, consumimos uma [api](https://github.com/ThiagoNelsi/dicio-api) que possui diversas informações a respeito de milhares de palavras da língua portuguesa.
 ### Funcionamento da aplicação
 1. O usuário digita a palavra que ele quer buscar;
 2. Ao clicar no botão "Pesquisar", primeiramente os elementos de saída são resetados;
